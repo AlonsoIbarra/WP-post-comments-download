@@ -288,30 +288,6 @@ if ( ! function_exists( 'create_book_option_menu' ) ) {
 			'em_plugin_settings',
 			'em_render_plugin_settings_form'
 		);
-
-		add_submenu_page(
-			null,
-			'file PDF',
-			'file PDF',
-			'manage_options',
-			'em-comments-pdf-download',
-			'em_pdf_template_loading'
-		);
-	}
-}
-
-if ( ! function_exists( 'em_pdf_template_loading' ) ) {
-	/**
-	 * The PDF template loading.
-	 *
-	 * @since    1.0.0
-	 *  */
-	function em_pdf_template_loading() {
-		$plugin_path     = plugin_dir_path( __FILE__ );
-		$admin_page_path = $plugin_path . 'public/partials/event-memories-pdf-render.php';
-		if ( file_exists( $admin_page_path ) ) {
-			require_once $admin_page_path;
-		}
 	}
 }
 
