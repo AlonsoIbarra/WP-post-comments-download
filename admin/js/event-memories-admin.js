@@ -50,5 +50,18 @@
 				}
 			  );
 		});
+		$('#em_pdf_css_styles_reset_as_default').click(function(){
+			if(confirm('Do you confirm reset AS DEFAULT value?')){
+				var css_style_value = $('#em_plugin_setting_pdf_css_styles').val()
+				$('#em_plugin_setting_pdf_css_styles_default').val(css_style_value);
+				document.getElementById('submit').click();	
+			}
+		});
+		$('#em_pdf_css_styles_reset_default').click(function(){
+			if(confirm('Do you confirm reset TO DEFAULT value?')){
+				var css_style_default_value = $('#em_plugin_setting_pdf_css_styles_default').val()
+				$('#em_plugin_setting_pdf_css_styles').val(css_style_default_value);
+			}
+		});
 	});
 })( jQuery );

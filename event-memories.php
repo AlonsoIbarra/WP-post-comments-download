@@ -231,77 +231,11 @@ if ( ! function_exists( 'em_plugin_setting_pdf_css_styles' ) ) {
 	function em_plugin_setting_pdf_css_styles() {
 		$options = get_option( 'em_plugin_settings_options' );
 		?>
-		<script>
-			const em_pdf_css_styles_reset_default_value = `.em-comments-first-page-container{
-}
-.em-comments-first-page-image-container{
-}
-.em-comments-first-page-image{}
-.em-comments-first-page-title p{
-text-align: center;
-font-size: 1.5rem;
-margin-top:10rem;
-color:grey;
-}
-.em-comments-first-page-subtitle{
-}
-.em-comments-first-page-subtitle p{
-text-align: center;
-font-size: 3rem;
-color:grey;
-margin-top:0;
-}
-.em-comments-first-page-due-date{
-text-align: center;
-font-size: 2rem;
-color:grey;
-}
-.em-comments-first-page-due-date-image-container{
-text-align:center;
-}
-.em-comments-first-page-due-date-image{
-width: 40%;
-}
-.em-comments-first-page-description p{
-text-align: center;
-font-size: 1.5rem;
-margin-top:0;
-color:grey;
-}
-.em-comments-container{
-text-align: center;
-margin:1%;
-width:98%;
-}
-.em-comments-container-table{}
-.em-comments-container-table-td{
-width:50%;
-}
-.em-comments-single-comment-container{
-width:80%;
-margin:3%;
-}
-.em-comments-single-comment-author p{
-text-align:center;
-font-size:2rem;
-color:grey;
-}
-.em-comments-single-comment-content{
-text-align:center;
-}
-.em-comments-single-comment-date{
-text-align:center;
-}
-.em-comments-single-comment-footer{
-text-align:center;
-}
-.em-comments-single-comment-footer-image{
-width: 50%;
-}`;
-		</script>
 		<div>
+		<textarea id='em_plugin_setting_pdf_css_styles_default' name='em_plugin_settings_options[pdf_css_styles_default]' type='textarea' style="display:none;"><?php echo esc_attr( $options['pdf_css_styles_default'] ); ?></textarea>
 		<textarea id='em_plugin_setting_pdf_css_styles' name='em_plugin_settings_options[pdf_css_styles]' type='textarea' style="width:50%; height:250px;"><?php echo esc_attr( $options['pdf_css_styles'] ); ?></textarea>
 		<br>
+		<input type="button" id="em_pdf_css_styles_reset_as_default" value='<?php echo __( 'Set as default', 'event-memories' ); ?>'/>
 		<input type="button" id="em_pdf_css_styles_reset_default" value='<?php echo __( 'Reset default', 'event-memories' ); ?>'/>
 		</div>
 		<?php
