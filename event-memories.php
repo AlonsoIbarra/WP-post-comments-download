@@ -7,17 +7,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://https://www.linkedin.com/in/saulalonsoibarra-software-engineer/
+ * @link              https://www.linkedin.com/in/saulalonsoibarra-software-engineer/
  * @since             1.0.0
  * @package           Event_Memories
  *
  * @wordpress-plugin
- * Plugin Name:       event-memories
- * Plugin URI:        https://https://fiesta.lezlynorman.com
- * Description:       Custom plugin to generate a signature book for weddings event.
+ * Plugin Name:       Event memories
+ * Plugin URI:        https://github.com/AlonsoIbarra/WP-post-comments-download
+ * Description:       Custom plugin to generate a pdf file for comments of a post gived.
  * Version:           1.0.0
- * Author:            Saul Ibarra
- * Author URI:        https://https://www.linkedin.com/in/saulalonsoibarra-software-engineer/
+ * Author:            Saul Alonso Ibarra
+ * Author URI:        https://www.linkedin.com/in/saulalonsoibarra-software-engineer/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       event-memories
